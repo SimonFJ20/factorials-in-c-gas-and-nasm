@@ -1,0 +1,71 @@
+Documentos de GitHub
+Habilitación de GitHub Codespaces para su organización
+En este articulo
+Acerca de habilitar GitHub Codespaces para su organización
+Elija quién puede crear espacios de códigos que se facturan a su organización
+Deshabilitar Codespaces para su organización
+Establecer un límite de gasto
+Puede controlar qué usuarios de su organización pueden usar GitHub Codespaces a expensas de la organización.
+
+Quién puede usar esta función
+Para modificar la configuración de facturación de una organización, debe ser propietario de una organización.
+
+Acerca de habilitar GitHub Codespaces para su organización
+Los propietarios de la organización pueden controlar qué usuarios de su organización pueden crear y utilizar espacios de códigos a expensas de la organización. Para obtener información sobre precios, consulte " Acerca de la facturación de GitHub Codespaces ".
+
+Solo las personas que pueden enviar cambios a un repositorio o bifurcar el repositorio pueden crear un espacio de código para ese repositorio. Para permitir que un usuario cree espacios de códigos para un repositorio propiedad de su organización, debe hacer una de las siguientes cosas.
+
+Asegúrese de que el usuario tenga acceso de lectura al repositorio y que el repositorio permita la bifurcación, de modo que el usuario pueda crear un espacio de códigos desde el repositorio, enviar sus cambios a una bifurcación y crear una solicitud de extracción para cualquier cambio que desee realizar. Para obtener más información, consulte " Administrar la política de bifurcación para su organización ".
+Asegúrese de que el usuario tenga acceso de escritura al repositorio, de modo que pueda enviar cambios directamente al repositorio sin bifurcarse.
+También debe asegurarse de que su organización no tenga habilitada una lista de direcciones IP permitidas. Para obtener más información, consulta " Administrar direcciones IP permitidas para tu organización " en la documentación de GitHub Enterprise Cloud.
+
+Para permitir que las personas creen espacios de código por los que se facturará a su organización, debe:
+
+Establecer un límite de gasto
+Elija quién puede crear espacios de códigos que se facturan a su organización
+Nota: Si es un educador verificado o un maestro, debe habilitar GitHub Codespaces desde un GitHub Classroom para usar su beneficio de Codespaces Education. Para obtener más información, consulte " Uso de espacios de código de GitHub con GitHub Classroom ".
+
+De forma predeterminada, un espacio de código solo puede acceder al repositorio desde el que se creó. Si desea que los espacios de código de su organización puedan acceder a otros repositorios de la organización a los que puede acceder el creador del espacio de código, consulte " Gestión del acceso al repositorio para los espacios de código de su organización ".
+
+Elija quién puede crear espacios de códigos que se facturan a su organización
+En la esquina superior derecha de GitHub.com, haga clic en su foto de perfil y luego en Sus organizaciones .
+Tus organizaciones en el menú de perfil
+
+Junto a la organización, haz clic en Configuración .
+El botón de configuración
+
+En la barra lateral izquierda, haz clic en Codespaces .
+
+En "Facturación", seleccione una de las siguientes opciones:
+
+Deshabilitado : a su organización no se le cobrará por el uso del espacio de código. Los espacios de códigos creados para los repositorios de su organización se facturarán a los usuarios individuales que los creen.
+Miembros seleccionados : los Codespaces creados para los repositorios de su organización por miembros seleccionados se facturarán a la organización.
+Todos los miembros : los Codespaces creados para los repositorios de su organización por miembros de su organización se facturarán a la organización.
+Todos los miembros y colaboradores externos : los Codespaces creados para los repositorios de su organización por miembros de la organización y colaboradores externos se facturarán a la organización.
+Botones de radio para "Facturación"
+
+Nota: Cuando selecciona Todos los miembros y colaboradores externos , todos los colaboradores externos que se agregaron a repositorios específicos pueden crear y usar Codespaces para esos repositorios, y se facturará a su organización por este uso. Para obtener más información sobre la gestión de colaboradores externos, consulte " Acerca de los colaboradores externos ".
+
+Haga clic en Guardar .
+
+Si eligió Miembros seleccionados , se muestra un cuadro de entrada para que ingrese los nombres de los usuarios que desea seleccionar.
+
+Cuadro de entrada para seleccionar usuarios
+
+Deshabilitar Codespaces para su organización
+Puede evitar la creación y el uso de espacios de códigos facturables a su organización.
+
+Nota : si deshabilita la facturación de los espacios de código de GitHub para algunos miembros y colaboradores de la organización, o para toda su organización, cualquier persona que pueda enviar cambios o bifurcar un repositorio en su organización aún podrá crear un espacio de código para ese repositorio. mediante el uso de su cuenta personal. Sin embargo, esto no supondrá ningún cargo para su organización. Para obtener información sobre cómo restringir el acceso a un repositorio, consulte " Gestión de equipos y personas con acceso a su repositorio ".
+
+En la esquina superior derecha de GitHub.com, haga clic en su foto de perfil y luego en Sus organizaciones .
+Tus organizaciones en el menú de perfil
+Junto a la organización, haz clic en Configuración .
+El botón de configuración
+En la barra lateral izquierda, haz clic en Codespaces .
+En "Facturación", seleccione Deshabilitado .
+Establecer un límite de gasto
+Nota: Debe establecer un límite de gasto distinto de cero en su cuenta personal, de organización o empresarial antes de que se pueda facturar a la cuenta por el uso de GitHub Codespaces.
+
+De manera predeterminada, todas las cuentas tienen un límite de gastos de GitHub Codespaces de $0 USD. Esto evita que se creen nuevos espacios de códigos o que se abran espacios de códigos existentes, si hacerlo supondría un costo facturable para su cuenta personal, de organización o de empresa. Para cuentas personales, siempre se pueden crear y usar espacios de código si la cuenta no ha alcanzado el límite de su uso mensual incluido. Para organizaciones y empresas, el límite de gasto predeterminado significa que, para permitir que las personas creen espacios de código que se facturan a la organización o a su empresa matriz, el límite debe cambiarse a un valor superior a $0 USD.
+
+Para obtener información sobre cómo administrar y cambiar el límite de gasto de su cuenta, consulte " Administrar su límite de gasto para Codespaces ".
